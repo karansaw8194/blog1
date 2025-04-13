@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save Kancha Gachibowli Forest</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1b5e20;
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 1em;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    section {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      margin-top: 1em;
+    }
+    .hidden {
+      display: none;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 Save Kancha Gachibowli Forest | जंगल बचाओ</h1>
+  </header>
+
+  <nav>
+    <button onclick="toggleLang('en')">English</button>
+    <button onclick="toggleLang('hi')">हिंदी</button>
+  </nav>
+
+  <section id="en" class="lang-section">
+    <h2>About the Issue</h2>
+    <p>The Kancha Gachibowli forest in Hyderabad is facing deforestation due to developmental activities. This threatens the natural habitat of many species and the green cover of the city.</p>
+    <h3>Impact on Wildlife</h3>
+    <p>Animals are losing their homes, and though viral videos show injured elephants, fact-checkers confirm they are not from Hyderabad. Still, the threat to wildlife is real.</p>
+    <img src="https://www.downtoearth.org.in/indimg/2022/09/1662018039_elephantinjury.jpg" alt="Injured Elephant Image from DTE India" />
+    <h3>Latest Coverage</h3>
+    <iframe src="https://www.youtube.com/embed/Z8RRCDDKKKI" title="Forest News"></iframe>
+    <h3>Watch More on Our Channel</h3>
+    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=bigdreams7539" title="Big Dreams YouTube Channel"></iframe>
+  </section>
+
+  <section id="hi" class="lang-section hidden">
+    <h2>इस मुद्दे के बारे में</h2>
+    <p>हैदराबाद का कांचा गाचीबोवली जंगल विकास कार्यों के कारण कट रहा है। यह कई प्रजातियों के प्राकृतिक आवास और शहर की हरियाली को खत्मे में डालता है।</p>
+    <h3>वन्य जीवन पर प्रभाव</h3>
+    <p>जानवरों के घर उजड़ रहे हैं। हालांकि वायरल वीडियो में घायल हाथी दिखाए जा रहे हैं, किंतु ओफ़िशल काहती हैं कि वे हैदराबाद के नहीं हैं। फिर भी वन्य जीवन पर खत्रा वास्तविक है।</p>
+    <img src="https://www.downtoearth.org.in/indimg/2022/09/1662018039_elephantinjury.jpg" alt="घायल हाथी की छवि" />
+    <h3>नवीनतम समाचार</h3>
+    <iframe src="https://www.youtube.com/embed/b8lvZj-Qdu4" title="वन न्यूज़"></iframe>
+    <h3>हमारे चैनल पर और देखें</h3>
+    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=bigdreams7539" title="Big Dreams YouTube Channel"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Save Hyderabad Forest. Built for awareness and education.</p>
+  </footer>
+
+  <script>
+    function toggleLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(section => {
+        section.classList.add('hidden');
+      });
+      document.getElementById(lang).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
